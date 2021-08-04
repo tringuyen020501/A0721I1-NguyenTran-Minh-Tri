@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<br>
+<input type="text" id="a1" placeholder=" điểm vật lí">
+<input type="text" id="a2" placeholder="điểm hóa học">
+<input type="text" id="a3" placeholder=" điểm sinh học">
+<input type="button" style="background-color: red" id="btn" value="TrungBinhvaTong" onclick="trungbinhvatong()"  >
+<input type="text" id="s">
+<input type="text" id="t">
+
+<script>
+    function trungbinhvatong() {
+        let a1= document.getElementById('a1').value;
+        let a2= document.getElementById('a2').value;
+        let a3= document.getElementById('a3').value;
+        let s = (parseInt(a1) + parseInt(a2) +parseInt(a3))/3;
+        let t =parseInt(a1) + parseInt(a2) + parseInt(a3);
+        document.getElementById('s').value=s;
+        document.getElementById('t').value=t;
+    }
+</script>
+
+</body>
+</html>

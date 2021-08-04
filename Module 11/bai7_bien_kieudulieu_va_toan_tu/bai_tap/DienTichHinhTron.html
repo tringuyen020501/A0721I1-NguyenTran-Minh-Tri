@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a1" placeholder="nhập bán kính">
+<input type="button" id="btn" value="Diện tích htron là" onclick="hinhtron()">
+<input type="text" id="dt">
+<script>
+    function hinhtron() {
+        let a1 = document.getElementById('a1').value;
+        let dt = parseInt(a1) * parseInt(a1);
+        document.getElementById('dt').value= dt;
+    }
+</script>
+
+</body>
+</html>

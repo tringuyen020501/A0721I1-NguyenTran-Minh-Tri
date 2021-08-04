@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a1" placeholder="Nhập độ C">
+<input type="button" id="btn" value="độ F là" onclick="chuyendoi()"  >
+<input type="text" id="a2">
+
+<script>
+    function chuyendoi() {
+       let a1 =document.getElementById('a1').value;
+       let a2 =((parseInt(a1)*9/5)+32);
+       document.getElementById('a2').value=a2;
+    }
+</script>
+</body>
+</html>

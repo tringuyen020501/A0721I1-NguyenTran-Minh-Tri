@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<br>
+<p>Amount:</p>
+<input type="text" id="a1" placeholder="nhập tiền:">
+<p>From currency:</p>
+<select name="" id="sel1">
+    <option value="a">Việt Nam</option>
+    <option value="b">Mỹ</option>
+    <option value="c">nhật bản </option>
+</select>
+<p>To Currency:</p>
+<select name="" id="sel2">
+    <option value="a">VND</option>
+    <option value="b">USD</option>
+    <option value="c">YEN</option>
+</select>
+</br>
+</br>
+<input type="button" id="btn" value="Convert" onclick="tiente()">
+<input type="text" id="kq">
+<script>
+    function tiente() {
+        let a1= document.getElementById('a1').value;
+        let sel1 = document.getElementById('sel1').value;
+        let sel2 = document.getElementById('sel2').value;
+        if (sel1 == sel2) {
+            let kq = a1;
+            document.getElementById('kq').value=kq;
+        }
+        if (sel1=="a" && sel2=="b" ) {
+            let kq = parseInt(a1)/23000;
+            document.getElementById('kq').value=kq;
+        }
+        if (sel1=="b" && sel2=="a" ) {
+            let kq = parseInt(a1)*23000;
+            document.getElementById('kq').value=kq;
+        }
+        if (sel1=="c" && sel2=="a" ) {
+            let kq = parseInt(a1)*206;
+            document.getElementById('kq').value=kq;
+        }
+        if (sel1=="a" && sel2=="c" ) {
+            let kq = parseInt(a1)/206;
+            document.getElementById('kq').value=kq;
+        }
+        if (sel1=="b" && sel2=="c" ) {
+            let kq = parseInt(a1)*109;
+            document.getElementById('kq').value=kq;
+        }
+        if (sel1=="c" && sel2=="b" ) {
+            let kq = parseInt(a1)/109;
+            document.getElementById('kq').value=kq;
+        }
+    }
+</script>
+</form>
+</body>
+</html>

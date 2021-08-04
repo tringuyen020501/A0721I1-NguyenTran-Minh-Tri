@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a1" placeholder="nhập bán kính">
+<input type="button" id="btn" value="chu vi hình tròn :" onclick="chuvi()">
+<input type="text" id="cv">
+
+<script>
+    function chuvi() {
+        let a1 = document.getElementById('a1').value;
+        let cv = parseInt(a1) * 4;
+        document.getElementById('cv').value = cv;
+    }
+</script>
+
+</body>
+</html>
