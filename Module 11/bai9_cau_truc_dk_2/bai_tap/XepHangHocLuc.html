@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =prompt('điểm bài kiểm tra');
+    let b= prompt('điểm giữa kì');
+    let c = prompt('điểm cuối kì');
+    let d = (parseInt(a) + parseInt(b)*2 + parseInt(c)*3)/6;
+    alert('điểm trung bình là ' +d);
+
+    if (d<3.5){
+        alert('hs kém');
+    }else if (d < 5 ) {
+        alert("hs yếu");
+    }else if (d<6.5){
+        alert("hs trung bình");
+    }else if (d<8){
+        alert("hs khá");
+    }else if (d<10){
+        alert("hs giỏi");
+    }
+</script>
+</body>
+</html>

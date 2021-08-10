@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input type="text" id="nhap"></td>
+    </tr>
+    <tr>
+        <td><input type="button" value="1" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="2" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="3" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="+" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="4" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="5" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="6" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="-" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="7" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="8" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="9" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="*" onclick="nhap('*')" style="height: 40px ; width: 40px" ></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="c" onclick="xoa()" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="0" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+        <td><input type="button" value="=" onclick="tinh()" style="height: 40px ; width: 40px"></td>
+        <td><input type="button" value="/" onclick="nhap(this.value)" style="height: 40px ; width: 40px" ></td>
+
+    </tr>
+    <tr>
+        <td><input type="button" value="<=" onclick="clear1()" style="height: 40px ; width: 40px"></td>
+    </tr>
+</table>
+<script>
+    function nhap(so) {
+        document.getElementById("nhap").value+= so;
+    }
+
+    function  tinh(){
+        let string =document.getElementById('nhap').value
+        document.getElementById("nhap").value=eval(string)
+
+    }
+    function xoa() {
+        document.getElementById("nhap").value="";
+
+    }
+    function clear1 () {
+        let string= document.getElementById("nhap").value;
+        let string1= string.substr(0,string.length-1);
+        document.getElementById("nhap").value=string1;
+    }
+
+
+</script>
+</body>
+</html>

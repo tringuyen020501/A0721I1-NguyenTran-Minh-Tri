@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập số phút");
+    let h =prompt("phí cố định");
+    let b = ((parseInt(a)-200)*200+150*400+50*600);
+    let c =((parseInt(a)-50)*400+50*600);
+    let d =parseInt(a)*600;
+    let u=parseInt(a)*0.01+parseInt(h)
+    if (b>200){
+        alert("cước phí là : " +b);
+    }else if (b>50){
+        alert("cước phí là: " +c);
+    }else {
+        alert("cước phí là :"+d);
+        alert("tổng là :"+u );
+    }
+</script>
+
+</body>
+</html>

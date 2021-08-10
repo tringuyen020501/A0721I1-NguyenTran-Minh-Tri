@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+    <img id="nobita" src="https://james.codegym.vn/pluginfile.php/51884/mod_assign/intro/1.png" width="100" height="100">
+<script>
+    function upArrowPressed() {
+        var element = document.getElementById('nobita');
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function  downArrowPressed() {
+        var element = document.getElementById('nobita');
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function leftArrowPressed() {
+        var element = document.getElementById('nobita');
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    function rightArrowPressed() {
+        var element = document.getElementById('nobita');
+        element.style.left=parseInt(element.style.left) + 5 + 'px';
+
+    }
+    function  moveSelection(evt) {
+        switch (evt.keycode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 38:
+                rightArrowPressed();
+                break;
+            case 39:
+                upArrowPressed()();
+                break;
+            case 40:
+                 downArrowPressed()();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown',moveSelection );
+    }
+</script>
+</body>
+</html>

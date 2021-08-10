@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =prompt("nhập tiền lương 1 năm");
+    let b =parseInt(a)*0.05;
+    let c =parseInt(a)*0.1;
+    let d =parseInt(a)*0.15;
+    let e =parseInt(a)*0.2;
+    let f =parseInt(a)*0.25;
+    let g =parseInt(a)*0.3;
+    let h =parseInt(a)*0.35;
+    if (a<60){
+        alert("tiền thuế là" +b);
+    }else if (a<120){
+        alert("tiền thuế là" +c);
+    }else if (a<216){
+        alert("tiền thuế là:" +d);
+    }else if (a<384){
+        alert("tiền thuế là:" +e);
+    }else if (a<624){
+        alert("tiền thuế là:" +f);
+    }else if ((a<960)) {
+        alert("tiền thuế là:" +g);
+    }else {
+        alert("tiền thuế là:" +h);
+    }
+</script>
+
+</body>
+</html>

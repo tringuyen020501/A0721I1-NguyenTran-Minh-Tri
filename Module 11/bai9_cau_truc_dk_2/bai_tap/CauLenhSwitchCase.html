@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="a" placeholder="Nhập Tháng">
+    <input type="button" value="Tính số ngày" onclick="tinh()">
+</form>
+<script>
+    function tinh() {
+        let b=  document.getElementById('a').value;
+        b=parseInt(b);
+        switch (b) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+               alert("31 ngày")
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert("30 ngày");
+                break;
+            default:
+               alert("28 ngày hoặc 29 ngày");
+        }
+    }
+</script>
+
+</body>
+</html>

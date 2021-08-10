@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =prompt("nhập a ");
+    let b =prompt("nhập b ");
+    let c =prompt("nhập c ");
+    let d = (Math.pow(b,2))-4*parseInt(a)*parseInt(c);
+    let x1 = (-parseInt(b))/2*parseInt(a);
+    let x3 = (-parseInt(b)+Math.sqrt(d))/(2*parseInt(a));
+    let x4 = (-parseInt(b)-Math.sqrt(d))/(2*parseInt(a));
+    let x5 =1;
+    let x6 =parseInt(c)/parseInt(a);
+    let x7 =-1;
+    let x8 =-parseInt(c)/parseInt(a);
+    if (a == 0){
+        alert("Pt vô nghiệm ");
+    }else {
+        if (d <0){
+            alert("pt vô nghiệm");
+        }if (d ==0){
+            prompt("x1 = x2 =" + x1);
+        }if (d>0){
+            alert("x1=:" + x3);
+            alert("x2=:" + x4);
+        }if (a+b+c==0){
+            alert("x1=" +x5);
+            alert("x2=:" +x6);
+        }if (a-b+c==0){
+            alert(" x1:" +x7);
+            alert(" x2:" +x8);
+        }
+    }
+</script>
+
+</body>
+</html>
