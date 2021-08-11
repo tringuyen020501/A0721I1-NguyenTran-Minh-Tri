@@ -5,10 +5,10 @@
     <title>Title</title>
 </head>
 <body onload="docReady()">
-    <img id="nobita" src="https://james.codegym.vn/pluginfile.php/51884/mod_assign/intro/1.png" width="100" height="100">
+    <img id="nobita" src="https://james.codegym.vn/pluginfile.php/51884/mod_assign/intro/1.png" style="position:absolute;left:0; top:0;" width="100" height="100">
 <script>
     function upArrowPressed() {
-        var element = document.getElementById('nobita');
+        let element = document.getElementById('nobita');
         element.style.top = parseInt(element.style.top) - 5 + 'px';
     }
     function  downArrowPressed() {
@@ -25,18 +25,18 @@
 
     }
     function  moveSelection(evt) {
-        switch (evt.keycode) {
+        switch (evt.keyCode) {
             case 37:
                 leftArrowPressed();
                 break;
             case 38:
-                rightArrowPressed();
+                upArrowPressed();
                 break;
             case 39:
-                upArrowPressed()();
+                rightArrowPressed();
                 break;
             case 40:
-                 downArrowPressed()();
+                 downArrowPressed();
                 break;
         }
     }

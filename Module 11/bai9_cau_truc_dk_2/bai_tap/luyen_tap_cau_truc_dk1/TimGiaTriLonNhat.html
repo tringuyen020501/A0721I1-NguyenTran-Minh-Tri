@@ -9,15 +9,14 @@
     let a =prompt('nhập a');
     let b =prompt('nhập b');
     let c =prompt('nhập c');
-    max =a;
-    if (max>b && max> c){
+    if (a>b && a > c){
         alert('a là max');
     }else {
-        if (max<b){
-            alert("b là max");
-        }
-        if (max <c){
+        if (b<c){
             alert("c là max");
+        }
+        else{
+            alert("b là max");
         }
     }
 

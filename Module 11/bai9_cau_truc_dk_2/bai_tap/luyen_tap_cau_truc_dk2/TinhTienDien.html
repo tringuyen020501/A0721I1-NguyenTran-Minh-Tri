@@ -7,25 +7,21 @@
 <body>
 <script>
     let a =prompt("nhập lượng điện tiêu thụ ");
-    let b =parseInt(a)*1.678;
-    let c =parseInt(a)*1.734;
-    let d =parseInt(a)*2.014;
-    let e =parseInt(a)*2.536;
-    let f =parseInt(a)*2.834;
-    let g =parseInt(a)*2.927;
+    let kq=0;
     if (a<50){
-         alert("tiền điền là" +b);
+        kq =parseInt(a)*1.678;
      }else if (a<100){
-         alert("tiền điền là" +c);
+        kq =parseInt(a)*1.734;
      }else if (a<200){
-         alert("tiền điền là:" +d);
+        kq=parseInt(a)*2.014;
      }else if (a<300){
-         alert("tiền điện là:" +e);
+        kq =parseInt(a)*2.536;
      }else if (a<400){
-         alert("tiền điện là:" +f);
+        kq =parseInt(a)*2.834;
      }else {
-         alert("tiền điện là:" +g);
+        kq =parseInt(a)*2.927;
      }
+    alert(kq);
 </script>
 </body>
 </html>
