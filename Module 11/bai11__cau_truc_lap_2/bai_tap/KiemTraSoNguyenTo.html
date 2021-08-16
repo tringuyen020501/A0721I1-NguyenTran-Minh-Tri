@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=0;
+    let num =2;
+    let result="";
+    while (count<20){
+         flag = true;
+    }if (num<2){
+        for (let i =2; i<num; i++){
+            if (num%i ==0){
+                flag = false;
+                break;
+            }
+        }
+        if (flag){
+            result +=num +",";
+            count++;
+        }
+        num++
+    }
+    alert(result);
+
+</script>
+</body>
+</html>
