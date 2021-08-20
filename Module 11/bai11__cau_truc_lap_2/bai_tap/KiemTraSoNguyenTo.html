@@ -10,14 +10,16 @@
     let num =2;
     let result="";
     while (count<20){
-         flag = true;
-    }if (num<2){
-        for (let i =2; i<num; i++){
-            if (num%i ==0){
+        let flag = true;
+    if (num<2) {
+        flag = false;
+        for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
                 flag = false;
                 break;
             }
         }
+    }
         if (flag){
             result +=num +",";
             count++;
