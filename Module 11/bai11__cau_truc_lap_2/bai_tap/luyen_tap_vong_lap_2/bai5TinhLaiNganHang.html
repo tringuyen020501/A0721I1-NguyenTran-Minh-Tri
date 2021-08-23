@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tienGoi = parseInt(prompt('tiền gởi là:'));
+    let laiXuat = parseFloat(prompt('lãi xuất '));
+    let thang = parseInt(prompt('sô tháng gởi'));
+    let tienLai=0;
+    for (let i=0;i<thang;i++){
+        tienLai+=tienGoi*laiXuat/100;
+        tienGoi+=tienGoi*laiXuat/100;
+    }
+    alert(tienLai);
+
+
+</script>
+</body>
+</html>

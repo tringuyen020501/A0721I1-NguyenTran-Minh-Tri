@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let f0 =0;
+    let f1 =1;
+    let f =f0 +f1;
+    let sum = f0+f1
+    let result = f0 +","+f1;
+    for (let i =0; i<18;i++){
+        sum+=f
+        result +=f+",";
+        f0=f1;
+        f1=f;
+        f= f0+f1;
+    }
+    alert(result+ "tổng:"+ sum);
+</script>
+
+</html>

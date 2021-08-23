@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="play()">Play</button>
+</body>
+<script>
+    function play() {
+        let min = parseInt(prompt("nhập giá trị nhỏ nhất"));
+        let max = parseInt(prompt("nhập giá trị lớn nhất"));
+        let random = min + Math.ceil(Math.random() * (max - min));
+        let choose;
+        let count = 0;
+        do {
+            choose = prompt("mời bạn đoán số ");
+            count++
+            if (choose == random) {
+                alert("bạn đã đoạn đúng")
+                break;
+            } else if (choose < random) {
+                alert("bạn nhập số nhỏ hơn kết quả ")
+            } else {
+                alert("bạn nhập số lơn hơn kết quả ")
+            }
+            if (choose==3){
+                alert("bạn đã hết lượt và mời bạn nhập lại")
+                break;
+            }
+
+        }while (true)
+
+    }
+</script>
+
+</html>
