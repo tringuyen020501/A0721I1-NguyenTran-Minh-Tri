@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number =[1, 2, 3, 4, 5];
+    let max = number[0];
+    let medium=0;
+    let sum=1;
+    for (let i=0; i<number.length;i++){
+        if (number[i]>max){
+            max = number[i];
+            sum +=number[i];
+            medium= sum/number.length;
+
+        }
+    }
+   console.log("max la:" +max+ " " +"medium:" +medium);
+</script>
+
+</body>
+</html>
