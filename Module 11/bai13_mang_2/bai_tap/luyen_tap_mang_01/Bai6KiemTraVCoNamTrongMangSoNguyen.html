@@ -8,17 +8,20 @@
 <script>
     let number=[4, 5, 10, 11, 16, 7, 8, 28, 89, 78];
     let v = parseInt(prompt());
-
-    for (let i =0; i<number.length;i++ ){
-        if (number[i]===v){
-            alert("V thuoc mang so Nguyen");
+    flag = false;
+    for (let i =0; i<number.length;i++ ) {
+        if (number[i] === v) {
+            flag = true;
             break;
-        }else {
-            alert("V k thuoc mang so Mguyen");
-            break;
-
         }
     }
+    if(flag=true){
+        alert("V la thuoc mang so Nguyen");
+    }else {
+        alert("V ko thuoc mang so Nguyen");
+    }
+
+
 </script>
 
 </body>
