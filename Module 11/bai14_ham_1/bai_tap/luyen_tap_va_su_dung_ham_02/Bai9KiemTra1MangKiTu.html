@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function search(str){
+        let  arr=["tri","win","1","2"];
+        let v =parseInt(prompt("nhap v "));
+        flag =false;
+        for (let i =0; i<arr.length;i++){
+            if (arr[i] === v ){
+                flag=true;
+            }
+        }
+        if (flag==true){
+            alert( str.split("").length-1);
+        }else {
+            return -1;
+
+        }
+
+    }
+    alert(search());
+
+</script>
+</body>
+</html>
