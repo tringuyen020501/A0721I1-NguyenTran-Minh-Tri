@@ -6,23 +6,18 @@
 </head>
 <body>
 <script>
-    function number(x,y) {
+    function number() {
         x=prompt("nhap x");
         y=prompt("nhay y");
         let result="";
         if (x>y){
             result="x >y";
-
         }else {
             result="x+y="+(parseInt(x)+parseInt(y));
         }
         return result;
-
     }
-    let monitor = confirm("OK");
-    let monitor1 = number(monitor);
-    alert(monitor1);
+    alert(number());
 </script>
-
 </body>
 </html>

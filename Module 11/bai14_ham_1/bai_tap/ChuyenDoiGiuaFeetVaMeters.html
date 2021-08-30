@@ -12,38 +12,25 @@
                oninput="footToMeter(this.value)"
                onchange="footToMeter(this.value)">
     </p>
-
     <p>meter: <span id="output"></span></p>
     </br>
-
     <p>
         <label>meter</label>
         <input id="input1" type="number" placeholder="nhap meter"
                oninput="MeterToFoot(this.value)"
                onchange="MeterToFoot(this.value)">
     </p>
-
     <p>foot: <span id="output1"></span></p>
-
 </form>
 <script>
     function footToMeter(foot) {
         meter = parseFloat(foot);
         document.getElementById("output").innerHTML=0.305*parseFloat(foot);
-
-
     }
-
     function MeterToFoot(meter) {
         foot = parseFloat(meter);
         document.getElementById("output1").innerHTML=3.279*parseFloat(meter);
     }
-
-
-
-
-
 </script>
-
 </body>
 </html>
