@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
-    function search(str){
-        let  arr=["tri","win","1","2"];
-        let v =parseInt(prompt("nhap v "));
-        flag =false;
+    function search(){
+        let  arr=["tri", "win", "1", "2"];
+        let v = prompt("nhập v");
+        count =0;
         for (let i =0; i<arr.length;i++){
-            if (arr[i] === v ){
-                flag=true;
+            if (arr[i] == v ){
+              count++;
             }
         }
-        if (flag==true){
-            alert( str.split("").length);
+        if (count !==0){
+            return count;
         }else {
             return -1;
 

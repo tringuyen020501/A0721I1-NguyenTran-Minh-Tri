@@ -8,16 +8,12 @@
 <script>
     function GiaiThua() {
         number=parseInt(prompt("nhap so"));
-        let result="";
+        result="";
         core =1;
         for (let i =1; i<=number;i++){
-            result= core*i;
-
-
-
-
+            core *=i;
+            result= core;
         }return result;
-
     }
     alert(GiaiThua());
 </script>

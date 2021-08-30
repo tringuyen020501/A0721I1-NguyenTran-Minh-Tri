@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
-    function Swap() {
-         let a =parseInt(prompt("nhap so 1"));
-         let b =parseInt(prompt("nhap so 2"));
-         let c;
-
-
-
-
+    let a =parseInt(prompt("nhap so 1"));
+    let b =parseInt(prompt("nhap so 2"));
+    let arr=[a, b];
+    function Swap(arr) {
+        let flag;
+        flag = arr[0];
+        arr[0] = arr[1];
+        arr[1] = flag;
     }
-    alert(Swap());
+    Swap(arr);
+    a =arr[0];
+    b= arr[1];
+    alert(a +" "+  b);
 </script>
-
 </body>
 </html>
