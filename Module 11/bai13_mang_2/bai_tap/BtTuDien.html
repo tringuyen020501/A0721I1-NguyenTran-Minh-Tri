@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-
 <body>
 <script>
-    let a = prompt();
-    let arr = [["book","house","pen"],
-                ["sach","nha","but"]
-        ]
-    let index =0;
-    for (let i in arr){
-        for (let j in arr[i]){
-            if (arr[i]==arr[j]){
-                alert(arr[i][j]);
-                index=i;
+    let array1 =["book", "house", "pen"];
+    let array2 =["sách", "nhà", "bút"];
+    function find(word){
+        let flag;
+        flag =false;
+        let indexSearch;
+        for (let index in array1){
+            if (array1[index]==word){
+                flag =true;
+                indexSearch=index;
 
-            }else {
-                alert("ko co");
-                break;
             }
         }
+        if (flag){
+            alert(word+" "+ "là:"+ " " +array2[indexSearch]);
+        }else {
+            alert("ko thấy gì cả");
+        }
+
     }
+    let word1= prompt("nhập từ");
+    find(word1);
+
 
 
 </script>

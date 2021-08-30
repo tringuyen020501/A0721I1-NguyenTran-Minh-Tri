@@ -6,29 +6,28 @@
 </head>
 <body>
 <script>
-    let array=[
-        ["Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe ,Regulus "],
-        ["Ursa Minor, Tarurus, Cygnus, Lyra, Aquila, Ursa Major, Leo"]
-    ];
-    function start(count) {
-        count = 0;
-        for (let i in array){
-                count++;
-                alert(i +"</br>");
-            for (let j in array[i]){
-                alert("" + array[i][j]+"</br>");
-            }
-            if (count==0){
-                alert("ko thay ngoi sao nao");
+    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
 
+    function findStart(start) {
+        let indexSearch;
+        let flag;
+        flag = false;
+        for (let index in array1) {
+            if (array1[index] == start) {
+                flag = true;
+                indexSearch = index;
+                break;
             }
-        }return count;
-
+        }
+        if (flag) {
+            alert(start + "thuộc về chòm sao:" + array2[indexSearch]);
+        } else {
+            alert(start + ":k thuộc chòm sao nào hết");
+        }
     }
-    let monitor =prompt("nhap ten");
-    let monitor1 =start(monitor);
-    alert(monitor1);
+    let start2 = prompt("nhap vào ngôi sao");
+    findStart(start2);
 </script>
-
 </body>
 </html>
