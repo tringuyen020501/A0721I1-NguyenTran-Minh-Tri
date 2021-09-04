@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<canvas id="myHCN" width="20px" height="10px"  style="border:1px solid #d3d3d3"></canvas>
+<canvas id="myHCN" width="400px" height="200px"  style="border:1px solid #d3d3d3"></canvas>
 
 <script>
     function Rectangle(x, y ) {
@@ -28,18 +28,17 @@
             return x*y;
 
         }
-
     } function createHCN(){
-        let cth=document.getElementById("myHCN");
-        cth.beginPath();
-
+        let canvax=document.getElementById("myHCN");
+        let ctx = canvax.getContext("2d");
+        ctx.fillStyle="blue";
+        ctx.fillRect(100, 50, 200, 100);
     }
-        let Rectangle1 = new Rectangle(10,20);
+        let Rectangle1 = new Rectangle(100,200);
         let x1 = Rectangle1.getX();
         let y2 = Rectangle1.getY();
         let cv = Rectangle1.getCV();
         let dt =Rectangle1.getDT();
-
         alert("chu vi hcn là:"+cv+ "    " +"diện tích hcn là:"+dt );
         createHCN();
 
