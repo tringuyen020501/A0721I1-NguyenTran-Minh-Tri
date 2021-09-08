@@ -8,39 +8,31 @@
 <canvas id="myHCN" width="400px" height="200px"  style="border:1px solid #d3d3d3"></canvas>
 
 <script>
-    function Rectangle(x, y ) {
-        this.x = parseInt(x);
-        this.y = parseInt(y);
-
-
-        this.getX = function () {
-            return x;
-
+    class Rectangle {
+        constructor(a, b) {
+            this.a=a;
+            this.b=b;
         }
-        this.getY = function () {
-            return y;
+        getDienTich(){
+            return this.a*this.b;
         }
-        this.getCV= function () {
-            return x*2 +y*2 ;
-
+        getChuVi(){
+            return (this.a+this.b)*2;
         }
-        this.getDT = function () {
-            return x*y;
-
+        createHCN(){
+            let canVax=document.getElementById("myHCN");
+            let ctx = canVax.getContext("2d");
+            ctx.fillStyle="blue";
+            ctx.fillRect(100, 50, this.b, this.a);
         }
-    } function createHCN(){
-        let canvax=document.getElementById("myHCN");
-        let ctx = canvax.getContext("2d");
-        ctx.fillStyle="blue";
-        ctx.fillRect(100, 50, 200, 100);
     }
-        let Rectangle1 = new Rectangle(100,200);
-        let x1 = Rectangle1.getX();
-        let y2 = Rectangle1.getY();
-        let cv = Rectangle1.getCV();
-        let dt =Rectangle1.getDT();
-        alert("chu vi hcn là:"+cv+ "    " +"diện tích hcn là:"+dt );
-        createHCN();
+
+    let hcn= new Rectangle(100,200);
+    let cv= hcn.getChuVi();
+    let dt= hcn.getDienTich();
+    alert("chu vi hcn là:"+cv+ "  " +"diện tích hcn là:"+dt );
+    hcn.createHCN();
+
 
 
 

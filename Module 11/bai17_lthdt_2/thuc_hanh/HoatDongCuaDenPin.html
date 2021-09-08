@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   //  class Battery{
+   //      constructor(energy) {
+   //          this.energy= energy ;
+   //      }
+   //      setEnergy (energy){
+   //          this.energy=energy;
+   //      }
+   //      getEnergy(){
+   //          return this.energy;
+   //      }
+   //      decreaseEnergy (){
+   //          if (this.energy>0){
+   //              this.energy--;
+   //          }
+   //
+   //      }
+   //  }
+   //  class FlashLamp {
+   //      constructor(status, battery) {
+   //          this.status=status;
+   //          this.battery=battery;
+   //      }
+   //      turnOn(){
+   //         this.status=true;
+   //      }
+   //      turnOff(){
+   //          this.status=false;
+   //      }
+   //      light(){
+   //          if (this.status){
+   //              alert("đèn đang sáng");
+   //          }else {
+   //              alert("đèn tắt rồi");
+   //          }
+   //      }
+   //      setBattery(Battery){
+   //          this.battery=Battery;
+   //      }
+   //      getBatteryInfo(Battery){
+   //          return this.battery;
+   //      }
+   //
+   //  }
+   //  let battery1 = new Battery();
+   //  battery1.setEnergy(10);
+   //  let flashLamp = new FlashLamp(Battery);
+   //  document.write("Battery info:"+ flashLamp.getBatteryInfo()+"<br>");
+   //  flashLamp.light();
+   //  document.write("Turn on "+ "<br>");
+   // flashLamp.turnOn();
+   // flashLamp.light();
+   //  document.write("Battery info:"+ flashLamp.getBatteryInfo()+"<br>");
+   let Battery = function () {
+
+       this.setEnergy = function (energy) {
+           this.energy = energy;
+       };
+
+       this.getEnergy = function () {
+           return this.energy;
+       };
+
+       this.decreaseEnergy = function () {
+           if (this.energy > 0) {
+               this.energy--;
+           }
+       }
+   };
+
+
+   let FlashLamp = function () {
+
+       this.setBattery = function (battery) {
+           this.battery = battery;
+       };
+
+       this.getBatteryInfo = function () {
+           return this.battery.getEnergy();
+       };
+
+       this.light = function () {
+           if(this.status){
+               alert("Lighting");
+           } else {
+               alert("Not lighting");
+           }
+       };
+
+       this.turnOn = function () {
+           this.status = true;
+       };
+
+       this.turnOff = function () {
+           this.status = false;
+       }
+   };
+
+   let battery = new Battery();
+   battery.setEnergy(10);
+
+   let flashLamp = new FlashLamp();
+   flashLamp.setBattery(battery);
+
+   document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+   flashLamp.light();
+
+   document.write("Turn on<br/>")
+   flashLamp.turnOn();
+   flashLamp.light();
+   document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+
+   document.write("Turn off<br/>")
+   flashLamp.turnOff();
+   flashLamp.light();
+</script>
+
+</body>
+</html>

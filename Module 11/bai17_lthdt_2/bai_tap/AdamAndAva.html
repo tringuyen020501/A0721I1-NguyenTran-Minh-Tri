@@ -6,40 +6,85 @@
 </head>
 <body>
 <script>
-    class Appe{
-        constructor(weight) {
-            this.weight= weight;
+    class Appel{
+        constructor() {
+            this.weight= 10;
+        }
+        decrease(){
+            this.weight--;
+        }
+        isEmpty(){
+            if (this.weight==0){
+                return true;
+            }else {
+                return false;
+            }
         }
         getWeight(){
-            return  this.getWeight(10);
+            return this.weight;
         }
-
     }
 
     class Human{
-        constructor(name, gender, weight1) {
+        constructor(name, gender, weight) {
             this.name= name;
             this.gender = gender;
-            this.weight= weight1;
+            this.weight= weight;
+        }
+        isMale(){
+            if (this.gender){
+                return true;
+            }else {
+                return false;
+            }
         }
         setGender(gender){
-             this.setGender(gender);
-        }
-        getName(){
-            return this.getName();
+             this.gender=gender;
         }
         setName(name){
-            this.setName(name);
-        }
-        getWeight(){
-            return this.getWeight();
+            this.name= name;
         }
         setWeight(weight){
-            this.setWeight(weight);
+            this.weight= weight;
         }
+        getWeight(){
+            return this.weight;
+        }
+        getName(){
+            return this.name;
+        }
+        checkApple(apple){
+            if (apple.isEmpty()){
+                alert("táo hết rồi nhé ");
+                return false;
+            }else {
+                alert("táo còn nha ");
+                return true;
+            }
+        }
+        eatApple(apple){
+            if (this.checkApple(apple)){
+                this.weight++;
+                apple.decrease();
+            }
+        }
+        say(message){
+            console.log(this.getName()+":"+message);
+        }
+
     }
+    let apple = new Appel();
+    let Adam = new Human("Adam", true, 60);
+    let Eva = new Human("Eva", false,50);
+    Adam.say("em ăn táo chưa");
+    Eva.say("em ăn rồi anh ăn với em nè");
+    Eva.eatApple(apple);
+    Adam.say("Ok em iu");
+    Adam.eatApple(apple);
+    console.log(Adam.getWeight());
+    console.log(Eva.getWeight());
+    console.log(apple.getWeight());
 
 </script>
-
 </body>
 </html>
