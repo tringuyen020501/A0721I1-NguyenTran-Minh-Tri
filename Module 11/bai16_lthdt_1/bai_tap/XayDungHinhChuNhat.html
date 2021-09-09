@@ -1,45 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<canvas id="myHCN" width="400px" height="200px"  style="border:1px solid #d3d3d3"></canvas>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Title</title>
+   </head>
+   <body>
+      <canvas
+         id="myHCN"
+         width="400px"
+         height="200px"
+         style="border: 1px solid #d3d3d3"
+      ></canvas>
 
-<script>
-    class Rectangle {
-        constructor(a, b) {
-            this.a=a;
-            this.b=b;
-        }
-        getDienTich(){
-            return this.a*this.b;
-        }
-        getChuVi(){
-            return (this.a+this.b)*2;
-        }
-        createHCN(){
-            let canVax=document.getElementById("myHCN");
-            let ctx = canVax.getContext("2d");
-            ctx.fillStyle="blue";
-            ctx.fillRect(100, 50, this.b, this.a);
-        }
-    }
+      <script>
+         class Rectangle {
+            constructor(a, b) {
+               this.a = a;
+               this.b = b;
+            }
+            getDienTich() {
+               return this.a * this.b;
+            }
+            getChuVi() {
+               return (this.a + this.b) * 2;
+            }
+            createHCN() {
+               let canVax = document.getElementById("myHCN");
+               let ctx = canVax.getContext("2d");
+               ctx.fillStyle = "blue";
+               ctx.fillRect(100, 50, this.b, this.a);
+            }
+         }
 
-    let hcn= new Rectangle(100,200);
-    let cv= hcn.getChuVi();
-    let dt= hcn.getDienTich();
-    alert("chu vi hcn là:"+cv+ "  " +"diện tích hcn là:"+dt );
-    hcn.createHCN();
-
-
-
-
-
-
-
-
-</script>
-</body>
+         let hcn = new Rectangle(100, 200);
+         let cv = hcn.getChuVi();
+         let dt = hcn.getDienTich();
+         alert("chu vi hcn là:" + cv + "  " + "diện tích hcn là:" + dt);
+         hcn.createHCN();
+      </script>
+   </body>
 </html>

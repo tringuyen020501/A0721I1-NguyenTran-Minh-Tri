@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a" placeholder="nhập chữ" >
+<input  type="button" value="tìm kiếm" onclick="search()">
+<script>
+    function search() {
+        let timKiem= document.getElementById("a").value;
+        switch (timKiem) {
+            case "o":
+            case "i":
+            case "u":
+            case "a":
+            case "e":
+            case "O":
+            case "I":
+            case "U":
+            case "A":
+            case "E":
+                alert("Nguyên âm");
+                break;
+            default:
+                alert("Phụ âm");
+        }
+    }
+</script>
+</body>
+</html>

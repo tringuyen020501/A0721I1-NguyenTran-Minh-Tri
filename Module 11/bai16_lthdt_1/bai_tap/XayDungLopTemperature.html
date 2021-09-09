@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    let Temperature = function (c) {
-        this.c=c;
+   <head>
+      <meta charset="UTF-8" />
+      <title>Title</title>
+   </head>
+   <body>
+      <script>
+         let Temperature = function (c) {
+            this.c = c;
 
-    this.getF = function () {
-        return 9/5*c +32;
-    }
-    this.getK = function () {
-        return  c+273.15;
-
-    }
-    }
-    let Temperature1 = new Temperature(25);
-    let getF1 = Temperature1.getF();
-    let getK1 = Temperature1.getK();
-    alert("độ F:"+ getF1+"  " +"độ K:"+ getK1);
-</script>
-
-</body>
+            this.getF = function () {
+               return (9 / 5) * c + 32;
+            };
+            this.getK = function () {
+               return c + 273.15;
+            };
+         };
+         let Temperature1 = new Temperature(25);
+         let getF1 = Temperature1.getF();
+         let getK1 = Temperature1.getK();
+         alert("độ F:" + getF1 + "  " + "độ K:" + getK1);
+      </script>
+   </body>
 </html>
