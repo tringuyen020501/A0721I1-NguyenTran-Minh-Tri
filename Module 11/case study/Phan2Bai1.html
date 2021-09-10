@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    function Salary (){
-        let salary = parseInt(prompt("nhập lương nhân viên"));
-        let thue = parseFloat(prompt("nhập thuê"));
-        let salary1= salary*thue
-        let netSalary ;
-        if (salary==15 && thue==0.2 ){
-            alert("Thuế thu nhập là :"+" "+salary1);
-            netSalary =salary-salary1;
-            alert("Lương ròng là:"+" "+netSalary);
-        }else if (salary>=7 && salary<=15 && thue==0.1) {
-            alert("Thuế thu nhập là :"+" "+salary1);
-            netSalary=salary-salary1;
-            alert("Lương ròng là:"+" "+netSalary);
-        }else if (thue==0.05){
-            alert("Thuế thu nhập là :"+" "+salary1);
-            netSalary=salary-salary1;
-            alert("Lương ròng là:"+" "+netSalary);
-        }else {
-            alert("bạn nhập sai rồi");
-        }
-    }
-    Salary();
-</script>
-</body>
+   <head>
+      <meta charset="UTF-8" />
+      <title>Title</title>
+   </head>
+   <body>
+      <script>
+         function Salary() {
+            let salary = parseInt(prompt("nhập lương nhân viên"));
+            let thue = parseFloat(prompt("nhập thuê"));
+            let salary1 = salary * thue;
+            let netSalary;           
+            if (salary == 15 && thue == 0.2) {
+               alert("Thuế thu nhập là :" + " " + salary1);
+               netSalary = salary - salary1;
+               alert("Lương ròng là:" + " " + netSalary);
+            } else if (salary >= 7 && salary <= 15 && thue == 0.1) {
+               alert("Thuế thu nhập là :" + " " + salary1);
+               netSalary = salary - salary1;
+               alert("Lương ròng là:" + " " + netSalary);
+            } else if (thue == 0.05) {
+               alert("Thuế thu nhập là :" + " " + salary1);
+               netSalary = salary - salary1;
+               alert("Lương ròng là:" + " " + netSalary);
+            } else {
+               alert("bạn nhập sai rồi");
+            }
+         }
+         Salary();
+      </script>
+   </body>
 </html>

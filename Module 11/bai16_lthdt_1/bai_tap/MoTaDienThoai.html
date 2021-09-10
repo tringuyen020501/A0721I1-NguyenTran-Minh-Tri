@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    class Mobile{
-        constructor() {
-            this.pin=100;
-            this.status=true;
-            this.memoryDraft=[];
-            this.memorySent=[];
-            this.memoryImport=[];
-        }
-        checkStatus(){
-            if (this.status){
-                console.log("on");
-            }else {
-                console.log("off");
+   <head>
+      <meta charset="UTF-8" />
+      <title>Title</title>
+   </head>
+   <body>
+      <script>
+         class Mobile {
+            constructor() {
+               this.pin = 100;
+               this.status = true;
+               this.memoryDraft = [];
+               this.memorySent = [];
+               this.memoryImport = [];
             }
-        }
-        turnOnOff(){
-            this.status=!this.status;
-        }
-        sacPin(){
-            this.pin=100;
-        }
-        soanTin(string){
-            this.memoryDraft=string ;
-            this.pin--;
-        }
-        //nhận tin nhắn
-        nhanTin(message){
-            this.memoryImport.push(message);
-            this.pin--;
-        }
-        goiTin(mobile, message){
-            this.soanTin(message);
-            mobile.nhanTin(this.memoryDraft);
-            this.memorySent.push(this.memoryDraft);
-            this.memoryDraft=[];
-            this.pin--;
-        }
-        hienThiTinDen(){
-            for (let i=0; i<this.memoryImport.length; i++){
-                console.log(this.memoryImport[i]);
+            checkStatus() {
+               if (this.status) {
+                  console.log("on");
+               } else {
+                  console.log("off");
+               }
             }
-            this.pin--;
-        }
-        hienThiTinDaGoi(){
-            for (let string of this.memoryImport){
-                console.log(this.memorySent);
+            turnOnOff() {
+               this.status = !this.status;
             }
-        }
-    }
-    let nokia = new Mobile();
-    let iphone = new Mobile();
-    nokia.goiTin(iphone,"xin chào bạn iphone");
-    nokia.goiTin(iphone,"khỏe không bạn");
-    iphone.hienThiTinDen();
-    iphone.goiTin(nokia,"xin chao nokia.Mình khỏe");
-    nokia.hienThiTinDen();
-
-</script>
-</body>
+            sacPin() {
+               this.pin = 100;
+            }
+            soanTin(string) {
+               this.memoryDraft = string;
+               this.pin--;
+            }
+            //nhận tin nhắn
+            nhanTin(message) {
+               this.memoryImport.push(message);
+               this.pin--;
+            }
+            goiTin(mobile, message) {
+               this.soanTin(message);
+               mobile.nhanTin(this.memoryDraft);
+               this.memorySent.push(this.memoryDraft);
+               this.memoryDraft = [];
+               this.pin--;
+            }
+            hienThiTinDen() {
+               for (let i = 0; i < this.memoryImport.length; i++) {
+                  console.log(this.memoryImport[i]);
+               }
+               this.pin--;
+            }
+            hienThiTinDaGoi() {
+               for (let string of this.memoryImport) {
+                  console.log(this.memorySent);
+               }
+            }
+         }
+         let nokia = new Mobile();
+         let iphone = new Mobile();
+         nokia.goiTin(iphone, "xin chào bạn iphone");
+         nokia.goiTin(iphone, "khỏe không bạn");
+         iphone.hienThiTinDen();
+         iphone.goiTin(nokia, "xin chao nokia.Mình khỏe");
+         nokia.hienThiTinDen();
+      </script>
+   </body>
 </html>
