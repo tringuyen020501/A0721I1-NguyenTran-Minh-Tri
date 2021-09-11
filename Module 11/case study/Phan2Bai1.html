@@ -8,7 +8,7 @@
       <script>
          function Salary() {
             let salary = parseInt(prompt("nhập lương nhân viên"));
-            let thue = parseFloat(prompt("nhập thuê"));
+            let thue = parseFloat(prompt("nhập thuế"));
             let salary1 = salary * thue;
             let netSalary;           
             if (salary == 15 && thue == 0.2) {
@@ -25,6 +25,7 @@
                alert("Lương ròng là:" + " " + netSalary);
             } else {
                alert("bạn nhập sai rồi");
+               
             }
          }
          Salary();

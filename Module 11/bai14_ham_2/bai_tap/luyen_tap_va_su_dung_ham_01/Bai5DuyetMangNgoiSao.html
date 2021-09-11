@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<script>
-    let array1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
-    let array2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+   <head>
+      <meta charset="UTF-8" />
+      <title>Title</title>
+   </head>
+   <body>
+      <script>
+         let array1 = [
+            "Polaris",
+            "Aldebaran",
+            "Deneb",
+            "Vega",
+            "Altair",
+            "Dubhe",
+            "Regulus",
+         ];
+         let array2 = [
+            "Ursa Minor",
+            "Tarurus",
+            "Cygnus",
+            "Lyra",
+            "Aquila",
+            "Ursa Major",
+            "Leo",
+         ];
 
-    function findStart(start) {
-        let indexSearch;
-        let flag;
-        flag = false;
-        for (let index in array1) {
-            if (array1[index] == start) {
-                flag = true;
-                indexSearch = index;
-                break;
+         function findStart(start) {
+            let indexSearch;
+            let flag;
+            flag = false;
+            for (let index in array1) {
+               if (array1[index] == start) {
+                  flag = true;
+                  indexSearch = index;
+                  break;
+               }
             }
-        }
-        if (flag) {
-            alert(start + "thuộc về chòm sao:" + array2[indexSearch]);
-        } else {
-            alert(start + ":k thuộc chòm sao nào hết");
-        }
-    }
-    let start2 = prompt("nhap vào ngôi sao");
-    findStart(start2);
-</script>
-</body>
+            if (flag) {
+               alert(start + "thuộc về chòm sao:" + array2[indexSearch]);
+            } else {
+               alert(start + ":k thuộc chòm sao nào hết");
+            }
+         }
+         let start2 = prompt("nhap vào ngôi sao");
+         findStart(start2);
+      </script>
+   </body>
 </html>
