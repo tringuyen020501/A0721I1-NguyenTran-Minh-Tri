@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         function a() {
+            let so = prompt("nhập số");
+            let kq;
+            while (so != 0) {
+               kq = kq * 10 + (so % 10);
+               so /= 10;
+            }
+            while (kq != 0) {
+               switch (kq % 10) {
+                  case 1:
+                     alert("Một");
+                     break;
+                  case 2:
+                     alert("Hai");
+                     break;
+                  case 3:
+                     alert("Ba");
+                     break;
+                  case 4:
+                     alert("Bốn");
+                     break;
+                  case 5:
+                     alert("Năm");
+                     break;
+                  case 6:
+                     alert("Sáu");
+                     break;
+                  case 7:
+                     alert("bảy");
+                     break;
+                  case 8:
+                     alert("Tám");
+                     break;
+                  case 9:
+                     alert("Chín");
+                     break;
+               }
+               kq /= 10;
+            }
+         }
+         a();
+      </script>
+   </body>
+</html>
