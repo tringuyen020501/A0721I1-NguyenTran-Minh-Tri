@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <h3>Menu:</h3>
+      <p id="mon" ></p>
+      <p id="choose" ></p>
+      <script>
+         let menu = [
+            "cafe",
+            "cam vắt",
+            "nước ép cà rốt",
+            "nước ép cà chua",
+            "nước lọc",
+            "nước dừa"        
+         ];
+         let gia=[1000, 2000, 3000, 4000, 5000, 6000];
+         let food= "";
+         let chooseFood=[];
+         let sum=[];       
+         for (let i = 0; i < menu.length; i++) {
+            food+=(i+1)+"."+menu[i]+"<br>";
+         }
+         document.getElementById("mon").innerHTML=food;
+         
+         function Add() {   
+            let idFood = parseInt(document.getElementById("a").value);
+            chooseFood.push(menu[idFood-1]+":"+gia[idFood-1]+"<br>");
+            document.getElementById("choose").innerHTML=chooseFood;           
+            sum.push(gia[idFood-1]+"<br>");
+            document.getElementById("tong").innerHTML=sum;           
+         }
+         Add();
+      </script>
+      </br>
+      <button onclick="Out()">Thoát Gọi Món</button> <br> <br>
+      <input type="text" id="a" placeholder="nhập tên món" />
+      <button onclick="Add()">OK</button> <br> <br>
+      Tổng: <p id="tong" ></p>
+   </body>
+</html>
