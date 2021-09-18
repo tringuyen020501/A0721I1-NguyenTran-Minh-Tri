@@ -8,42 +8,35 @@
    </head>
    <body>
       <script>
-         let arr = [
-            [1, 3, 6, 7],
-            [8, 9, 11, 5],
-         ];
-         let count = 0;
-         let n = 2;
-         let result = "";
-         while (count < arr.length) {
-            if (isPrime(n)) {
-               count++;
-               result += n + ",";
-            }
-            n++;
-         }
-         alert(result);
-         function isPrime(arr) {
-            let flag = true;
-            if (arr < 2) {
-               flag = false;
-            }
-            for (let i = 0; i < arr.length; i++) {
-               for (let j = 0; j < arr[i].length; j++) {
-                  if (arr[i][j] % i == 0) {
-                     flag = false;
-                     break;
-                  }
+         function isPrime(number) {
+            let count = 0;
+            for (let i = 0; i <= number; i++) {
+               if (number % i == 0) {
+                  count++;
                }
             }
-            if (flag) {
+            if (count == 2) {
                return true;
             } else {
                return false;
             }
          }
-         let snt = isPrime(arr);
-         alert(snt);
+         function findPrime(array){
+            let arr=[];
+            
+            for (let i = 0; i < array.length; i++){
+               for (let j = 0; j < array[i].length; j++) {
+                  if(isPrime(array[i][j])){
+                     arr.push(array[i][j])
+                    
+                  }
+               }
+            }
+         }
+         findPrime([[1,2,3,5],[4,7,6,11]]);
+
+      
+         
       </script>
    </body>
 </html>
