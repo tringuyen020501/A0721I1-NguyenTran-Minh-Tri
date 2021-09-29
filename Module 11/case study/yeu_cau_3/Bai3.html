@@ -7,20 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let arr =[5, 2, 5];
-        [6, 3, 4]
-        let arr=[];
-        function maxFraction(){
-            for(let i =0; i<arr1.length;i++){
-                for(let j=0; arr2.length;j++){
-                   
-                }
-
+<script>
+    function phanSo() {
+        let numerators = [5, 2, 5];
+        let denominators = [6, 3, 4];
+        max = numerators[0] / denominators[0];
+        let index = 0;
+        for (let i = 1; i < numerators.length; i++) {
+            if (max < numerators[i] / denominators[i]) {
+                max = numerators[i] / denominators[i];
+                index = i;
             }
         }
-        
-
-    </script>
+        alert(index);
+    }
+    phanSo();
+</script>
 </body>
 </html>

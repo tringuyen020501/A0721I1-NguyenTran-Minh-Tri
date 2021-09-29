@@ -8,25 +8,26 @@
    </head>
    <body>
       <script>
-         
-         let arr = [
-            [1, 2, 3, 4, 5],
-            [2, 9, 10, 11, 12],
-         ];        
-         function sumEven(arr) {
-            let sum = 0;
-            for(let i =0; i<arr.length;i++){
-               for (let j = 0; j < arr[i].length; j++) {             
-                  if (arr[i][j] % 2 == 0) {
-                     sum += arr[i][j];
-                     
+         let m =parseInt(prompt("nhập số dòng "));
+         let n =parseInt(prompt("nhập số cột "));
+         let matrix=[];
+         let sum=0;
+         for(let i =0;i<m;i++){
+            let row=[];
+            for(let j =0;j<n;j++){
+               row[j]=parseInt(prompt("nhập số vào ma nhận"));
+            }
+            matrix[i]=row;
+         }                 
+            for(let i =0; i<matrix.length;i++){
+               for (let j = 0; j < matrix[i].length; j++){             
+                  if (matrix[i][j] % 2 == 0) {
+                     sum += matrix[i][j];
                   }
                }
             }
-            return sum;
-         }
-         let tong= sumEven(arr);
-         alert(tong);
+            console.log(matrix);
+            alert(sum);        
       </script>
    </body>
 </html>

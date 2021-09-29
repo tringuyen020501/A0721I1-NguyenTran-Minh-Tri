@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         class Book {
+            constructor(id, name, year, quantity, status) {
+               this.id = id;
+               this.name = name;
+               this.quantity = quantity;
+               this.year = year;
+               this.status = status;
+            }
+            setId(id) {
+               this.id = id;
+            }
+            getId() {
+               return this.id;
+            }
+            setName(name) {
+               this.name = name;
+            }
+            getName() {
+               return this.name;
+            }
+            setQuantity() {
+               this.quantity = quantity;
+            }
+            getQuantity() {
+               return this.quantity;
+            }
+            setStatus(status) {
+               this.status = status;
+            }
+            getStatus() {
+               return this.status;
+            }
+         }
+         let boo1= new book1("1", "Toán", "2000", 10, true);
+         let boo2= new book1("2", "Văn", "2001", 11, true);
+         let boo3= new book1("3", "Anh", "2002", 12, true);
+         let bookList=[boo1, boo2, boo3];
+         display();
+      </script>
+   </body>
+</html>

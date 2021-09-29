@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+   </head>
+   <body>
+      <script>
+         function checkCloseNumber(closeNumber1, closeNumber2) {
+            let sum1 = 0;
+            let sum2 = 0;
+            for (let i = 0; i < closeNumber1; i++) {
+               if (closeNumber1 % i == 0) {
+                  sum1 += i;
+               }
+            }
+            for (let i = 0; i < closeNumber2; i++) {
+               if (closeNumber2 % i == 0) {
+                  sum2 += i;
+               }
+            }
+            if (sum1 === closeNumber2 && sum2 === closeNumber1) {
+               return true;
+            } else {
+               return false;
+            }
+         }
+         let closeNumber11 = parseInt(prompt("nhập số nguyên dương 1:"));
+         let closeNumber22 = parseInt(prompt("nhập số nguyên dương 2:"));
+         let checkCloseNumber1 = checkCloseNumber(closeNumber11,closeNumber22);
+         alert(checkCloseNumber1);
+        
+      </script>
+   </body>
+</html>

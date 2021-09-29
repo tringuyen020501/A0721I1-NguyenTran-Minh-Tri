@@ -8,6 +8,18 @@
    </head>
    <body>
       <script>
+         let m = parseInt(prompt("nhập số dòng "));
+         let n = parseInt(prompt("nhập số cột "));
+         let matrix = [];
+         let arr = [];
+         let sum = 0;
+         for (let i = 0; i < m; i++) {
+            let row = [];
+            for (let j = 0; j < n; j++) {
+               row[j] = parseInt(prompt("nhập số vào ma nhận"));
+            }
+            matrix[i] = row;
+         }
          function isPrime(number) {
             let count = 0;
             for (let i = 0; i <= number; i++) {
@@ -21,22 +33,15 @@
                return false;
             }
          }
-         function findPrime(array){
-            let arr=[];
-            
-            for (let i = 0; i < array.length; i++){
-               for (let j = 0; j < array[i].length; j++) {
-                  if(isPrime(array[i][j])){
-                     arr.push(array[i][j])
-                    
-                  }
+         for (let i = 0; i < matrix.length; i++) {
+            for (let j = 0; j < matrix[i].length; j++) {
+               if (isPrime(matrix[i][j])) {
+                  arr.push(matrix[i][j]);
                }
             }
          }
-         findPrime([[1,2,3,5],[4,7,6,11]]);
-
-      
-         
+         alert(matrix);
+         alert(arr);
       </script>
    </body>
 </html>

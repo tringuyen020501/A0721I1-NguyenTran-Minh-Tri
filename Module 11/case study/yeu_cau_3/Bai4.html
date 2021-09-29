@@ -7,48 +7,30 @@
       <title>Document</title>
    </head>
    <body>
+      <p id="text"></p>
       <script>
-         function a() {
-            let so = prompt("nhập số");
-            let kq;
-            while (so != 0) {
-               kq = kq * 10 + (so % 10);
-               so /= 10;
-            }
-            while (kq != 0) {
-               switch (kq % 10) {
-                  case 1:
-                     alert("Một");
-                     break;
-                  case 2:
-                     alert("Hai");
-                     break;
-                  case 3:
-                     alert("Ba");
-                     break;
-                  case 4:
-                     alert("Bốn");
-                     break;
-                  case 5:
-                     alert("Năm");
-                     break;
-                  case 6:
-                     alert("Sáu");
-                     break;
-                  case 7:
-                     alert("bảy");
-                     break;
-                  case 8:
-                     alert("Tám");
-                     break;
-                  case 9:
-                     alert("Chín");
-                     break;
+         let numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+         let name = [
+            "không",
+            "một",
+            "hai",
+            "ba",
+            "bốn",
+            "năm",
+            "sáu",
+            "bảy",
+            "tám",
+            "chín",
+         ];
+         let chon = prompt("nhập số");
+         for (let i = 0; i < chon.length; i++) {
+            for (let j = 0; j < 10; j++) {
+               if (chon[i] == numbers[j]) {
+                  document.getElementById("text").innerHTML +=
+                     name[j] + "&nbsp;&nbsp";
                }
-               kq /= 10;
             }
          }
-         a();
       </script>
    </body>
 </html>
