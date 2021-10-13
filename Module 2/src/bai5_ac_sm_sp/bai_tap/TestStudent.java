@@ -10,7 +10,7 @@ public class TestStudent {
         students[1]=student2;
         student1.classes="A07I4";
         student1.setName("Tri4");
-        System.out.println(student1);
+
 
 
     }
