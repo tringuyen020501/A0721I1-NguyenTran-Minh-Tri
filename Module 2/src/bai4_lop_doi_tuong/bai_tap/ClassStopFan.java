@@ -68,4 +68,9 @@ public class ClassStopFan {
     public void setSpeed(int speed) {
         this.speed = speed;
     }
+
+    private static void infoFan(boolean on, int speed, String radius, Color color ){
+
+
+    }
 }
