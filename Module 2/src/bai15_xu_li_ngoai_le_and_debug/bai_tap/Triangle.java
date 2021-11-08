@@ -11,22 +11,23 @@ public class Triangle {
         int b= scanner.nextInt();
         System.out.println("Hãy nhập c:");
         int c= scanner.nextInt();
+        Triangle tria= new Triangle();
         try {
-            Triangle tria= new Triangle();
             tria.checkTriangle(a,b,c);
-        }catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        }catch (Exception ex){
-            System.out.println("Sai nhé");
+        }catch (Exception e){
+            e.printStackTrace();
         }
-        scanner.close();
     }
-    public void checkTriangle( int a,int b, int c)  throws IllegalArgumentException{
-        if (a+b<=c || a+c<=b || b+c<=a) {
-            throw new IllegalArgumentException("Lỗi: Tam giác k hợp lệ");
-        }else {
-            System.out.println("Đây là tam giác");
-        }
+    public void checkTriangle( int a,int b, int c) throws IllegalArgumentException {
+        //try{
+            if (a+b<=c || a+c<=b || b+c<=a) {
+                throw new IllegalArgumentException("Lỗi: Tam giác k hợp lệ");
+            }else {
+                System.out.println("Đây là tam giác");
+            }
+//        }catch (Exception e){
+//            System.out.println(e.getMessage());
+//        }
     }
 }
 
