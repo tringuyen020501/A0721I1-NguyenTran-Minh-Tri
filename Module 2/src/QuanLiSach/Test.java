@@ -19,7 +19,7 @@ public class Test {
             System.out.println(tmp.isEmpty() ? "Input your choice: ":"Please input value from 1 to 8: ");
             tmp= scanner.nextLine();
             if (isNumber(tmp)) choice = Integer.parseInt(tmp);
-        }while (choice<=0||choice>4);
+        }while (choice<=0||choice>8);
 
         switch (choice){
             case 1:
