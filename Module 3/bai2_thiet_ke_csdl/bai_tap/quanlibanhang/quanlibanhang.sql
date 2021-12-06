@@ -1,3 +1,4 @@
+create database quanlibanhang;
 use quanlibanhang;
 
 create table customer(
@@ -28,3 +29,5 @@ primary key (pID,oID),
 foreign key (pID) references product(pID),
 foreign key (oID) references orderr(oID)
 );
+
+

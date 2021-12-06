@@ -6,9 +6,14 @@ insert into Customer values
 (3,'Hong Ha', 50);
 
 insert into Orderr values
-(1,1,"2006-3-21",null),
-(2,2,"2006-3-23",null), 
-(3,1,"2006-3-16",null);
+(1,1,"2009-06-5",null),
+(2,2,"2009-06-5",null),
+(3,3,"2009-06-5",null),
+(4,2,"2009-06-5",null);
+
+-- (1,1,"2006-03-21",null),
+-- (2,2,"2006-03-23",null), 
+-- (3,1,"2006-03-16",null),
 
 
 insert into Product values
@@ -32,6 +37,10 @@ insert into OrderDetal values
 select *from orderr;
 
 -- Hiển thị danh sách các khách hàng đã mua hàng, và danh sách sản phẩm được mua bởi các khách
+select C.cName,p.pName 
+from customer as C join orderr o on C.cID=o.cID
+join orderdetal as od on o.oID=od.oID
+join product as p on p.pID=od.pID;
 
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
 select C.cName,cID from Customer C where not exists(select *from Customer C2 inner join orderr O on C2.cID=O.cID and C2.cID=C.cID); 
