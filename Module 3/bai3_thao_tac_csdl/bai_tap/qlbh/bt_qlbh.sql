@@ -44,6 +44,7 @@ join product as p on p.pID=od.pID;
 
 -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
 select C.cName,cID from Customer C where not exists(select *from Customer C2 inner join orderr O on C2.cID=O.cID and C2.cID=C.cID); 
+
 -- Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
 
 
