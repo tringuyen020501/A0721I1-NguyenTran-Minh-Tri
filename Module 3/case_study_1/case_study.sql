@@ -22,12 +22,12 @@ ten_loai_khach varchar(45)
 );
 
 create table loai_dich_vu(
-ma_loai_dich_vu int,
+ma_loai_dich_vu int primary key auto_increment,
 ten_loai_dich_vu varchar(45)
 );
-
+ 
 create table kieu_thue(
-ma_kieu_the int primary key auto_increment,
+ma_kieu_thue int primary key auto_increment,
 ten_kieu_thue varchar(45) 
 );
 
@@ -45,7 +45,7 @@ ma_hop_dong int,
 ma_dich_vu_di_kem int,
 so_luong int,
 foreign key (ma_hop_dong) references hop_dong(ma_hop_dong),
-foreign key (ma_dich_vu_di_kem) references dich_vu(ma_dich_vu_di_kem)
+foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem)
 );
 
 
@@ -68,7 +68,7 @@ foreign key(ma_bo_phan) references bo_phan(ma_bo_phan)
 );
 
 create table hop_dong(
-ma_hop_dong int,
+ma_hop_dong int primary key auto_increment,
 ngay_lam_hop_dong datetime,
 ngay_ket_thuc datetime,
 ten_dat_coc double,
