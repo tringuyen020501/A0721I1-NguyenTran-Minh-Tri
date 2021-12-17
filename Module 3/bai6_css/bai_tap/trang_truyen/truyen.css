@@ -2,8 +2,9 @@
     width: 100%;
     height: 10%;
 }
-.b{
+.b:link, .b:visited{
     color: orange;
+    text-decoration: underline;
 }
 #header{
     color: brown;
