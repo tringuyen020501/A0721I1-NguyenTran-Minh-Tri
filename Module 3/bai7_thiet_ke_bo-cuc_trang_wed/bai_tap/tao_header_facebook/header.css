@@ -1,0 +1,15 @@
+img {
+   padding: auto;
+   width: 1%;
+   boxsizing: border-box;
+   border-radius: 3px;
+}
+#search {
+   width: 22%;
+   border: solid 1px;
+   border-radius: 3px;
+
+}
+#header{
+    width: 1%;
+}

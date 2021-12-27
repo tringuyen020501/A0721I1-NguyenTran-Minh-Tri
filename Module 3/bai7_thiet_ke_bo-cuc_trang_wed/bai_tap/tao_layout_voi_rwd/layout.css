@@ -1,0 +1,42 @@
+.boder{
+    background-color: black;
+    color: aliceblue;
+    size: 10px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
+    height: 20px;
+    width: 100%;
+}
+.left{
+    background:beige ;
+    height: 500px;
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.center{
+    background:wheat;
+    height: 500px;
+    width: 60%;
+    float: left;
+}
+#right{
+    background-color: aquamarine;
+    height: 500px;
+    width: 20%;
+    float: left;
+  
+}
+.under{
+    background: gray ;
+    height:  50px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+    color: black;
+}
+.btn{
+    margin-left: 60px;
+    font-size: 30px;
+    size: 40px; 
+}
