@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2557e74f-49da-48e6-ac82-72f54cc8afbd" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 1 - Java Overview.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 10 - DSA Danh sách.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 11 - DSA Stack Queue.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 12 - Map Tree.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 13 - Searching Algorithms.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 14 - Sorting Algorithms.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 15 - Debug.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 15 - Exception Handling.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 16 - IO Text File-converted-converted.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 17 - Binary File and Serialization.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 18 - Threading.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 19 - String.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 2 - Vòng lặp trong Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 20 - OOAD  SOLID.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 21 - Creational Design Pattern.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 22 - Structural Design Pattern.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 23 - Behavioral Design Pattern.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 3 - Mảng và phương thức trong Java.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 4 - OOP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 5 - Access Modifier.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 6 - Inheritance.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 7 - Interface and Abstract class.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 8 - Clean Code.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Slides-20211015/Slide 9 - Test First  TDD.pdf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="22uwd3YWXP0QiUFG2H5oJfQwD7D" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/login" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2557e74f-49da-48e6-ac82-72f54cc8afbd" name="Default Changelist" comment="" />
+      <created>1640700863525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1640700863525</updated>
+      <workItem from="1640700868462" duration="115000" />
+      <workItem from="1640700996763" duration="59000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="739" y="334" key="FileChooserDialogImpl" timestamp="1640701052066">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="739" y="334" key="FileChooserDialogImpl/-2560.-243.1280.700/0.0.1920.1160@0.0.1920.1160" timestamp="1640701052066" />
+    <state x="342" y="190" key="new project wizard" timestamp="1640701053932">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="342" y="190" key="new project wizard/-2560.-243.1280.700/0.0.1920.1160@0.0.1920.1160" timestamp="1640701053932" />
+  </component>
+</project>
