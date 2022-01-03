@@ -1,0 +1,61 @@
+#header img {
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+#nav li {
+    display: inline-block;
+    list-style: none;
+    height: 30px;
+
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 30px;
+    padding: 0 12px;
+    display: block;
+    color: black;
+    list-style-type: none;
+}
+
+#infor {
+    display: flex;
+}
+
+#infor .nav11 {
+    width: 20%;
+    display: inline-block;
+}
+
+#infor .list {
+
+    height: 500px;
+}
+
+#seedata {
+
+    width: 80%;
+    height: 500px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+#nav1 li input {
+    padding: 12px 0;
+
+    display: block;
+
+    cursor: pointer;
+
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    width: 200px;
+
+}
+
+#nav1 {
+    list-style-type: none;
+}

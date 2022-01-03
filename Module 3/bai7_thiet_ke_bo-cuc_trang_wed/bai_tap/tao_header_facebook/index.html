@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<frameset rows="10%,80%,10%">
+    <frame name="h1"
+           src="t1.html">
+    <frameset cols="20%,*,20%">
+        <frame name="" src="t2.html"></frame>
+        <frame src="t3.html" name="main"></frame>
+        <frame name="" src="t4.html"></frame>
+    </frameset>
+    <frame name="" src="t5.html"></frame>
+</frameset>
 <body>
-    <frameset rows="10%,80%,10%">
-        <frame name="h1" src="header.html"></frame>
-    <frameset cols="20%,*">
-        <frame src="slide.html"></frame>
-        <frame src="content.html"></frame>
-    </frameset>
-    <frame src="content.html"></frame>
-    </frameset>
 </body>
 </html>

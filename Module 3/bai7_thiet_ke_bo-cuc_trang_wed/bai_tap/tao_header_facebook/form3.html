@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Khoa Công Nghệ Thông Tin</title>
+    <link rel="stylesheet" href="./form3.css">
+    <script>
+        function Doiphong(id) {
+            var x = document.getElementById('seedata');
+            switch (id) {
+                case 1 : {
+                    x.style.backgroundImage = "url('./Bai1/tbao.png')";
+                    break;
+                }
+                case 2 : {
+                    x.style.backgroundImage = "url('./Bai1/ttucc.png')";
+                    break;
+                }
+                case 3 : {
+                    x.style.backgroundImage = "url('./Bai1/dtao.png')";
+                    break;
+                }
+                case 4 : {
+                    x.style.backgroundImage = "url('./Bai1/dtaosaudh.png')";
+                    break;
+                }
+                default : {
+
+                }
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+<div id="header">
+    <img src="header.png" alt="">
+    <ul id="nav">
+        <li><a href="">HOME</a></li>
+        <li><a href="">GIỚI THIỆU</a></li>
+        <li><a href="">TUYỂN SINH</a></li>
+        <li><a href="">ĐÀO TẠO</a></li>
+        <li><a href="">NGHIÊN CỨU</a></li>
+        <li><a href="">HỢP TÁC</a></li>
+        <li><a href="">SINH VIÊN</a></li>
+        <li><a href="">CỰU SINH VIÊN</a></li>
+        <li><a href="">LIÊN HỆ </a></li>
+    </ul>
+    </ul>
+</div>
+
+<div id="slider">
+    <img src="teacher.png" alt="" width="100%">
+</div>
+
+
+<div id="infor">
+    <div class="nav11">
+        <ul id="nav1">
+            <li><input type="text" value="THÔNG BÁO" onclick="Doiphong(1)"></li>
+            <li><input type="text" value="TIN TỨC" onclick="Doiphong(2)"></li>
+            <li><input type="text" value="ĐÀO TẠO ĐẠI HỌC" onclick="Doiphong(3)"></li>
+            <li><input type="text" value="ĐẠO TẠO SAU ĐẠI HỌC" onclick="Doiphong(4)"></li>
+            <li><input type="text" value="NGHIÊN CỨU" onclick="Doiphong()"></li>
+            <li><input type="text" value="BIỂU MẪU" onclick="Doiphong()"></li>
+            <li><input type="text" value="GÓP Ý" onclick="Doiphong()"></li>
+        </ul>
+    </div>
+    <div class="data" id="seedata">
+    </div>
+</div>
+</body>
+</html>
