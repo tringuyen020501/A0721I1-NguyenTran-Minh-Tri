@@ -13,18 +13,22 @@
   </head>
   <body>
  <center><h2 style="color: brown">Danh Sách Khách Hàng</h2></center>
-  <form>
-    <table>
+  <form method="get">
+    <table border="1">
       <tr>
         <th>Tên</th>
         <th>Ngày Sinh</th>
         <th>Địa chỉ</th>
-        <th>Ảnh</th>
+        <th>Điểm</th>
       </tr>
-
+        <c:forEach var="student" items="${studentList}">
       <tr>
-
+            <td><c:out value="${student.name}"></c:out></td>
+            <td><c:out value="${student.date}"></c:out></td>
+            <td><c:out value="${student.address}"></c:out></td>
+            <td><c:out value="${student.grade}"></c:out></td>
       </tr>
+        </c:forEach>
     </table>
   </form>
   </body>
